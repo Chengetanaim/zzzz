@@ -4,8 +4,8 @@ from .serializers import NewsSerializer, JobSerializer
 from datetime import datetime
 from rest_framework import generics
 from django.http import HttpResponse
-from .jobs import add_job
-from .adding_news import add_news
+# from .jobs import add_job
+# from .adding_news import add_news
 
 today = datetime.now()
 
@@ -23,7 +23,7 @@ class JobList(generics.ListAPIView):
 
 
 def update(request):
-    add_job()
-    add_news()
+#     add_job()
+#     add_news()
 
     return HttpResponse("Updated!")
