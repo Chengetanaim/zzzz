@@ -1,11 +1,12 @@
 from .iharare_jobs import iharare_jobs_links, iharare_jobs_titles
-from .jobszimbabwe import jobszimbabwe_dates, jobszimbabwe_links, jobszimbabwe_titles
+# from .jobszimbabwe import jobszimbabwe_dates, jobszimbabwe_links, jobszimbabwe_titles
+from .unjobs import unjobs_links, unjobs_titles
 from .models import Job
 
 
-dates = jobszimbabwe_dates
-titles = jobszimbabwe_titles + iharare_jobs_titles 
-links = jobszimbabwe_links + iharare_jobs_links 
+
+titles = iharare_jobs_titles + unjobs_titles
+links = iharare_jobs_links + unjobs_links 
 
 
 def add_job():
